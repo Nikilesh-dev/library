@@ -1,0 +1,116 @@
+﻿<Window x:Class="library.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:library"
+        mc:Ignorable="d"
+        Title="Window1" Height="850" Width="1000" >
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="C:\Users\nikilesh\Downloads\images.jpg" ></ImageBrush>
+        </Grid.Background>
+        <Border  Width="550" Height="830"  CornerRadius="25">
+
+            <Border.Effect>
+                <DropShadowEffect ShadowDepth="20" BlurRadius="20" Color="Black" Opacity="0.6"></DropShadowEffect>
+            </Border.Effect>
+            <!--<Grid Background="#2fb171" >
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>-->
+            <!--<Border BorderBrush="Black" CornerRadius="10" Width="550" Height="630" Grid.Row="0">-->
+            <Grid   Width="550" Height="700" >
+                <Grid.Background>
+                    <SolidColorBrush Color="Black" Opacity="0.3"></SolidColorBrush>
+                </Grid.Background>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition  Height="auto"></RowDefinition>
+                    <RowDefinition  Height="auto"></RowDefinition>
+                    <RowDefinition  Height="auto"></RowDefinition>
+                    <RowDefinition  Height="auto"></RowDefinition>
+                    <RowDefinition  Height="auto"></RowDefinition>
+                    <RowDefinition  Height="auto"></RowDefinition>
+                    <RowDefinition  Height="auto"></RowDefinition>
+                    <RowDefinition  Height="auto"></RowDefinition>
+                    <RowDefinition  Height="auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Label Content="REGISTRATION FORM" HorizontalAlignment="Center" Grid.Row="0" Grid.Column="0" Foreground="White" FontFamily="Lucida Sans" Grid.ColumnSpan="2" Margin="0,30,0,0" FontSize="30" FontWeight="Medium"></Label>
+                <StackPanel Grid.Row="1"  Grid.Column="0" Margin="10,30,30,0" HorizontalAlignment="Right"  >
+                    <Label Content="FIRST NAME" Margin="0,0,0,0" FontWeight="SemiBold" FontSize="15" FontFamily="Lucida Sans" Foreground="White" ></Label>
+                    <Border BorderThickness="0,0,0,3" Height="30" Width="150" BorderBrush="Black">
+                        <TextBox x:Name="txtFanme" BorderThickness="0"  FontSize="16" VerticalContentAlignment="Bottom" FontWeight="Medium" Padding="5,0,0,0"></TextBox>
+                    </Border>
+                </StackPanel>
+                <StackPanel Grid.Row="1"  Grid.Column="1" Margin="20,30,0,0" HorizontalAlignment="Left" >
+                    <Label Content="LASTNAME" Margin="0,0,0,0" HorizontalAlignment="Left" FontWeight="SemiBold" FontSize="15" FontFamily="Lucida Sans"  Foreground="White"></Label>
+                    <Border BorderThickness="0,0,0,3" Height="30" Width="150" BorderBrush="Black">
+                        <TextBox x:Name="txtLanme" BorderThickness="0" FontSize="16" VerticalContentAlignment="Bottom" FontWeight="Medium" Padding="5,0,0,0"></TextBox>
+                    </Border>
+                </StackPanel>
+                <StackPanel Grid.Row="2"  Grid.Column="0" Margin="94,10,0,0" Grid.ColumnSpan="2" HorizontalAlignment="Left" >
+                    <Label Content="USERNAME" Margin="0,0,0,0" HorizontalAlignment="Left" FontWeight="SemiBold" FontSize="15"  Foreground="White" FontFamily="Lucida Sans"></Label>
+                    <Border BorderThickness="0,0,0,3" Height="30" Width="350" BorderBrush="Black">
+                        <TextBox x:Name="txtUser" BorderThickness="0" FontSize="16" VerticalContentAlignment="Bottom" FontWeight="Medium" Padding="5,0,0,0"></TextBox>
+                    </Border>
+                </StackPanel>
+                <StackPanel Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2"  Margin="94,10,0,0">
+                    <Label Content="Gender" FontSize="15" FontWeight="SemiBold"  Foreground="White" FontFamily="Lucida Sans"></Label>
+                    <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                        <RadioButton Content="Male" FontSize="13" FontWeight="Medium"  Foreground="White" FontFamily="Lucida Sans"></RadioButton>
+                        <RadioButton Content="Female" Margin="10,0,0,0" FontSize="13" FontWeight="Medium"  Foreground="White" FontFamily="Lucida Sans"></RadioButton>
+                        <RadioButton Content="Prefer not to say" Margin="10,0,0,0" FontSize="13" FontWeight="Medium"  Foreground="White" FontFamily="Lucida Sans"></RadioButton>
+                    </StackPanel>
+
+                </StackPanel>
+                <StackPanel Grid.Row="4"  Grid.Column="0" Margin="94,10,0,0" Grid.ColumnSpan="2" HorizontalAlignment="Left" >
+                    <Label Content="E-MAIL" Margin="0,0,0,0" HorizontalAlignment="Left" FontWeight="SemiBold" FontSize="15"  Foreground="White" FontFamily="Lucida Sans"></Label>
+                    <Border BorderThickness="0,0,0,3" Height="30" Width="350" BorderBrush="Black">
+                        <TextBox x:Name="txtMail" BorderThickness="0" FontSize="16" VerticalContentAlignment="Bottom" FontWeight="Medium" Padding="5,0,0,0"></TextBox>
+                    </Border>
+                </StackPanel>
+                <StackPanel Grid.Row="5"  Grid.Column="0" Margin="94,10,0,0" Grid.ColumnSpan="2" HorizontalAlignment="Left" >
+                    <Label Content="PH.NUMBER" Margin="0,0,0,0" HorizontalAlignment="Left" FontWeight="SemiBold" FontSize="15"  Foreground="White" FontFamily="Lucida Sans"></Label>
+                    <Border BorderThickness="0,0,0,3" Height="30" Width="350" BorderBrush="Black">
+                        <TextBox x:Name="txtnum" BorderThickness="0" FontSize="16" VerticalContentAlignment="Bottom" FontWeight="Medium" Padding="5,0,0,0"></TextBox>
+                    </Border>
+                </StackPanel>
+                <StackPanel Grid.Row="6"  Grid.Column="0" Margin="94,10,0,0" Grid.ColumnSpan="2" HorizontalAlignment="Left" >
+                    <Label Content="PASSWORD" Margin="0,0,0,0" HorizontalAlignment="Left" FontWeight="SemiBold" FontSize="15"  Foreground="White" FontFamily="Lucida Sans"></Label>
+                    <Border BorderThickness="0,0,0,3" Height="30" Width="350" BorderBrush="Black">
+                        <TextBox x:Name="txtpass" BorderThickness="0" FontSize="16" VerticalContentAlignment="Bottom" FontWeight="Medium" Padding="5,0,0,0"></TextBox>
+                    </Border>
+                </StackPanel>
+                <StackPanel Grid.Row="7"  Grid.Column="0" Margin="94,10,0,0" Grid.ColumnSpan="2" HorizontalAlignment="Left" >
+                    <Label Content="CONFIRM PASSWORD" Margin="0,0,0,0" HorizontalAlignment="Left" FontWeight="SemiBold" FontSize="15"  Foreground="White" FontFamily="Lucida Sans"></Label>
+                    <Border BorderThickness="0,0,0,3" Height="30" Width="350" BorderBrush="Black">
+                        <TextBox x:Name="txtpass1" BorderThickness="0" FontSize="16" VerticalContentAlignment="Bottom" FontWeight="Medium" Padding="5,0,0,0"></TextBox>
+                    </Border>
+                </StackPanel>
+                <Border Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="2" Margin="0,40,0,0"  Background="#3adc90" Width="130" Height="30" CornerRadius="15">
+                    <Button Content="SUBMIT" Width="130" Height="30" Background="Transparent" Foreground="White" BorderThickness="0" FontSize="15" FontWeight="Medium" FontFamily="Lucida Sans" Click="Button_Click_1"></Button>
+                </Border>
+                <Button Content="BACK" Grid.Row="9" Width="30" Background="Transparent" Foreground="White" BorderBrush="Black" BorderThickness="0,0,0,3" Click="Button_Click" Grid.Column="0" Grid.ColumnSpan="2" Margin="0,10,0,0" FontFamily="Lucida Sans"></Button>
+
+
+
+            </Grid>
+        </Border>
+    </Grid>
+    <!--</Grid>
+    </Border>-->
+   
+        
+    
+</Window>

@@ -1,0 +1,276 @@
+﻿<Window x:Class="library.Window3"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:library"
+        mc:Ignorable="d"
+        Title="Window3" Height="850" Width="1200">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="4*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Column="1" >
+            <Grid.Background>
+                <SolidColorBrush Color="WhiteSmoke" Opacity="1"></SolidColorBrush>
+            </Grid.Background>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50"></ColumnDefinition>
+                <ColumnDefinition Width="3*"></ColumnDefinition>
+                <ColumnDefinition Width="3*"></ColumnDefinition>
+                <ColumnDefinition Width="50"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition  Height="auto"></RowDefinition>
+                <RowDefinition  Height="auto"></RowDefinition>
+                <RowDefinition  Height="auto"></RowDefinition>
+                <RowDefinition  Height="auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Border Grid.Row="0" Grid.Column="1" Margin="30,40,0,0" BorderBrush="LightGreen" BorderThickness="10,0,0,0" Background="White" CornerRadius="15,30,30,0">
+                <StackPanel Orientation="Horizontal">
+                    
+                <Image Source="C:\Users\nikilesh\Downloads\content.jpg" Height="120" Margin="0,0,0,0"   ></Image>
+                    <StackPanel Orientation="Vertical" Margin="10,0,0,0">
+                        <Label Content="Book Name : Masonry: Beyond the Light" FontSize="15" FontWeight="Medium"></Label>
+                        <Label Content="Author : William Schnoebelen" FontSize="15" FontWeight="Medium"></Label>
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="Avaliability :" FontSize="19" FontWeight="Medium"></Label>
+                            <Label Content="" FontSize="19" FontWeight="Medium" x:Name="lblbook1"></Label>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="0,20,0,0"  >
+                            <Border Width="120" Height="30" Background="Green" CornerRadius="15">
+                                <Button x:Name="take" Content="TakeBook"  Background="Transparent" Foreground="White" BorderThickness="0" FontSize="15" FontWeight="Medium" Click="take_Click"></Button>
+                            </Border>
+                            <Border Width="120" Height="30" Background="Red" CornerRadius="15" Margin="20,0,0,0">
+                                <Button x:Name="Return" Content="ReturnBook"  Background="Transparent" Foreground="White" Margin="0,0,0,0" BorderThickness="0" FontSize="15" FontWeight="Medium" Click="Return_Click"></Button>
+                            </Border>
+                           
+                            
+                        </StackPanel>
+                    </StackPanel>
+                    
+                    </StackPanel>
+            </Border>
+            <Border Grid.Row="0" Grid.Column="2" Margin="30,40,0,0" BorderBrush="LightGreen" BorderThickness="10,0,0,0" Background="White" CornerRadius="15,30,30,0">
+                <StackPanel Orientation="Horizontal">
+
+                    <Image Source="C:\Users\nikilesh\Downloads\content.png" Height="120" Margin="0,0,0,0"   ></Image>
+                    <StackPanel Orientation="Vertical" Margin="10,0,0,0">
+                        <Label Content="Book Name : Experiments with Alternate Currents" FontSize="15" FontWeight="Medium"></Label>
+                        <Label Content="Author : Nikola Tesla" FontSize="15" FontWeight="Medium"></Label>
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="Avaliability :" FontSize="19" FontWeight="Medium"></Label>
+                            <Label Content="" FontSize="19" FontWeight="Medium"  x:Name="lblbook2"></Label>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="0,20,0,0"  >
+                            <Border Width="120" Height="30" Background="Green" CornerRadius="15">
+                                <Button x:Name="take1" Content="TakeBook"  Background="Transparent" Foreground="White" BorderThickness="0" FontSize="15" FontWeight="Medium" Click="take1_Click"></Button>
+                            </Border>
+                            <Border Width="120" Height="30" Background="Red" CornerRadius="15" Margin="20,0,0,0">
+                                <Button x:Name="Return1" Content="ReturnBook"  Background="Transparent" Foreground="White" Margin="0,0,0,0" BorderThickness="0" FontSize="15" FontWeight="Medium" Click="Return1_Click"></Button>
+                            </Border>
+
+
+                        </StackPanel>
+                    </StackPanel>
+
+                </StackPanel>
+            </Border>
+            <Border Grid.Row="1" Grid.Column="1" Margin="30,40,0,0" BorderBrush="LightGreen" BorderThickness="10,0,0,0" Background="White" CornerRadius="15,30,30,0">
+                <StackPanel Orientation="Horizontal">
+
+                    <Image Source="C:\Users\nikilesh\Downloads\content (1).jpg" Height="120" Margin="0,0,0,0"   ></Image>
+                    <StackPanel Orientation="Vertical" Margin="10,0,0,0">
+                        <Label Content="Book Name : A Century of Subways" FontSize="15" FontWeight="Medium"></Label>
+                        <Label Content="Author : Richard Davis" FontSize="15" FontWeight="Medium"></Label>
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="Avaliability :" FontSize="19" FontWeight="Medium"></Label>
+                            <Label Content="" FontSize="19" FontWeight="Medium"  x:Name="lblbook3"></Label>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="0,20,0,0"  >
+                            <Border Width="120" Height="30" Background="Green" CornerRadius="15">
+                                <Button x:Name="take2" Content="TakeBook"  Background="Transparent" Foreground="White" BorderThickness="0" FontSize="15" FontWeight="Medium" Click="take2_Click"></Button>
+                            </Border>
+                            <Border Width="120" Height="30" Background="Red" CornerRadius="15" Margin="20,0,0,0">
+                                <Button x:Name="Return2" Content="ReturnBook"  Background="Transparent" Foreground="White" Margin="0,0,0,0" BorderThickness="0" FontSize="15" FontWeight="Medium" Click="Return2_Click"></Button>
+                            </Border>
+
+
+                        </StackPanel>
+                    </StackPanel>
+
+                </StackPanel>
+            </Border>
+            <Border Grid.Row="1" Grid.Column="2" Margin="30,40,0,0" BorderBrush="LightGreen" BorderThickness="10,0,0,0" Background="White" CornerRadius="15,30,30,0">
+                <StackPanel Orientation="Horizontal">
+
+                    <Image Source="C:\Users\nikilesh\Downloads\content (2).jpg" Height="120" Margin="0,0,0,0"   ></Image>
+                    <StackPanel Orientation="Vertical" Margin="10,0,0,0">
+                        <Label Content="Book Name : A Guide to High-performance Powder Coating" FontSize="15" FontWeight="Medium"></Label>
+                        <Label Content="Author : Bob Utech" FontSize="15" FontWeight="Medium"></Label>
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="Avaliability :" FontSize="19" FontWeight="Medium"></Label>
+                            <Label Content="" FontSize="19" FontWeight="Medium"  x:Name="lblbook4"></Label>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="0,20,0,0"  >
+                            <Border Width="120" Height="30" Background="Green" CornerRadius="15">
+                                <Button x:Name="take3" Content="TakeBook"  Background="Transparent" Foreground="White" BorderThickness="0" FontSize="15" FontWeight="Medium" Click="take3_Click"></Button>
+                            </Border>
+                            <Border Width="120" Height="30" Background="Red" CornerRadius="15" Margin="20,0,0,0">
+                                <Button x:Name="Return3" Content="ReturnBook"  Background="Transparent" Foreground="White" Margin="0,0,0,0" BorderThickness="0" FontSize="15" FontWeight="Medium" Click="Return3_Click"></Button>
+                            </Border>
+
+
+                        </StackPanel>
+                    </StackPanel>
+
+                </StackPanel>
+            </Border>
+            <Border Grid.Row="2" Grid.Column="1" Margin="30,40,0,0" BorderBrush="LightGreen" BorderThickness="10,0,0,0" Background="White" CornerRadius="15,30,30,0">
+                <StackPanel Orientation="Horizontal">
+
+                    <Image Source="C:\Users\nikilesh\Downloads\content (3).jpg" Height="120" Margin="0,0,0,0"   ></Image>
+                    <StackPanel Orientation="Vertical" Margin="10,0,0,0">
+                        <Label Content="Book Name : Hard Air: Adventures from the Edge of Flying" FontSize="15" FontWeight="Medium"></Label>
+                        <Label Content="Author : W Scott Olsen" FontSize="15" FontWeight="Medium"></Label>
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="Avaliability :" FontSize="19" FontWeight="Medium"></Label>
+                            <Label Content="" FontSize="19" FontWeight="Medium"  x:Name="lblbook5"></Label>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="0,20,0,0"  >
+                            <Border Width="120" Height="30" Background="Green" CornerRadius="15">
+                                <Button x:Name="take4" Content="TakeBook"  Background="Transparent" Foreground="White" BorderThickness="0" FontSize="15" FontWeight="Medium" Click="take4_Click"></Button>
+                            </Border>
+                            <Border Width="120" Height="30" Background="Red" CornerRadius="15" Margin="20,0,0,0">
+                                <Button x:Name="Return4" Content="ReturnBook"  Background="Transparent" Foreground="White" Margin="0,0,0,0" BorderThickness="0" FontSize="15" FontWeight="Medium" Click="Return4_Click"></Button>
+                            </Border>
+
+
+                        </StackPanel>
+                    </StackPanel>
+
+                </StackPanel>
+            </Border>
+            <Border Grid.Row="2" Grid.Column="2" Margin="30,40,0,0" BorderBrush="LightGreen" BorderThickness="10,0,0,0" Background="White" CornerRadius="15,30,30,0">
+                <StackPanel Orientation="Horizontal">
+
+                    <Image Source="C:\Users\nikilesh\Downloads\content (4).jpg" Height="120" Margin="0,0,0,0"   ></Image>
+                    <StackPanel Orientation="Vertical" Margin="10,0,0,0">
+                        <Label Content="Book Name : The Banana: Empires, Trade Wars, and Globalization" FontSize="15" FontWeight="Medium"></Label>
+                        <Label Content="Author : James Willey" FontSize="15" FontWeight="Medium"></Label>
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="Avaliability :" FontSize="19" FontWeight="Medium"></Label>
+                            <Label Content="" FontSize="19" FontWeight="Medium"  x:Name="lblbook6"></Label>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="0,20,0,0"  >
+                            <Border Width="120" Height="30" Background="Green" CornerRadius="15">
+                                <Button x:Name="take5" Content="TakeBook"  Background="Transparent" Foreground="White" BorderThickness="0" FontSize="15" FontWeight="Medium" Click="take5_Click"></Button>
+                            </Border>
+                            <Border Width="120" Height="30" Background="Red" CornerRadius="15" Margin="20,0,0,0">
+                                <Button x:Name="Return5" Content="ReturnBook"  Background="Transparent" Foreground="White" Margin="0,0,0,0" BorderThickness="0" FontSize="15" FontWeight="Medium" Click="Return5_Click"></Button>
+                            </Border>
+
+
+                        </StackPanel>
+                    </StackPanel>
+
+                </StackPanel>
+            </Border>
+            <Border Grid.Row="3" Grid.Column="1" Margin="30,40,0,0" BorderBrush="LightGreen" BorderThickness="10,0,0,0" Background="White" CornerRadius="15,30,30,0">
+                <StackPanel Orientation="Horizontal">
+
+                    <Image Source="C:\Users\nikilesh\Downloads\content (5).jpg" Height="120" Margin="0,0,0,0"   ></Image>
+                    <StackPanel Orientation="Vertical" Margin="10,0,0,0">
+                        <Label Content="Book Name : The Electronic Republic?: The Impact of Technology on Education for Citizenship" FontSize="15" FontWeight="Medium"></Label>
+                        <Label Content="Author : Philip J" FontSize="15" FontWeight="Medium"></Label>
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="Avaliability :" FontSize="19" FontWeight="Medium"></Label>
+                            <Label Content="" FontSize="19" FontWeight="Medium"  x:Name="lblbook7"></Label>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="0,20,0,0"  >
+                            <Border Width="120" Height="30" Background="Green" CornerRadius="15">
+                                <Button x:Name="take6" Content="TakeBook"  Background="Transparent" Foreground="White" BorderThickness="0" FontSize="15" FontWeight="Medium" Click="take6_Click"></Button>
+                            </Border>
+                            <Border Width="120" Height="30" Background="Red" CornerRadius="15" Margin="20,0,0,0">
+                                <Button x:Name="Return6" Content="ReturnBook"  Background="Transparent" Foreground="White" Margin="0,0,0,0" BorderThickness="0" FontSize="15" FontWeight="Medium" Click="Return6_Click"></Button>
+                            </Border>
+
+
+                        </StackPanel>
+                    </StackPanel>
+
+                </StackPanel>
+            </Border>
+            <Border Grid.Row="3" Grid.Column="2" Margin="30,40,0,0" BorderBrush="LightGreen" BorderThickness="10,0,0,0" Background="White" CornerRadius="15,30,30,0">
+                <StackPanel Orientation="Horizontal">
+
+                    <Image Source="C:\Users\nikilesh\Downloads\content (6).jpg" Height="120" Margin="0,0,0,0"   ></Image>
+                    <StackPanel Orientation="Vertical" Margin="10,0,0,0">
+                        <Label Content="Book Name : Tokyo Phantasmagoria: An Analysis of Politics and Commodity" FontSize="15" FontWeight="Medium"></Label>
+                        <Label Content="Author : Kenny luoi" FontSize="15" FontWeight="Medium"></Label>
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="Avaliability :" FontSize="19" FontWeight="Medium"></Label>
+                            <Label Content="" FontSize="19" FontWeight="Medium"  x:Name="lblbook8"></Label>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="0,20,0,0"  >
+                            <Border Width="120" Height="30" Background="Green" CornerRadius="15">
+                                <Button x:Name="take7" Content="TakeBook"  Background="Transparent" Foreground="White" BorderThickness="0" FontSize="15" FontWeight="Medium" Click="take7_Click"></Button>
+                            </Border>
+                            <Border Width="120" Height="30" Background="Red" CornerRadius="15" Margin="20,0,0,0">
+                                <Button x:Name="Return7" Content="ReturnBook"  Background="Transparent" Foreground="White" Margin="0,0,0,0" BorderThickness="0" FontSize="15" FontWeight="Medium" Click="Return7_Click"></Button>
+                            </Border>
+
+
+                        </StackPanel>
+                    </StackPanel>
+
+                </StackPanel>
+            </Border>
+
+
+
+
+
+
+
+
+
+
+        </Grid>
+        <Grid>
+            <Grid.Background>
+                <ImageBrush ImageSource="C:\Users\nikilesh\Downloads\images (1).jpg"  Opacity="0.6"></ImageBrush>
+            </Grid.Background>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Image Source="C:\Users\nikilesh\Downloads\profile-icon-png-916.png" Grid.Row="0" Height="180" Margin="0,70,0,0"></Image>
+            <Grid Grid.Row="1" >
+                
+                <StackPanel  Margin="0,20,0,0" HorizontalAlignment="Center">
+                    <Label Content="Hi,Welcome" FontSize="26" FontWeight="Bold" ></Label>
+                    <Label x:Name="lblname" Content="" FontSize="23" FontWeight="Bold" Margin="10,0,0,0"></Label>
+                </StackPanel>
+
+                <StackPanel  HorizontalAlignment="Center" Margin="0,180,0,0">
+                    <Label Content="Here are the book collection" FontSize="17" FontWeight="Bold"></Label>
+                    <Label Content="We have for You" FontSize="17" FontWeight="Bold" Margin="40,0,0,0"></Label>
+
+                </StackPanel>
+                <Image Source="C:\Users\nikilesh\Downloads\—Pngtree—right arrow glyph black icon_4008260.png" Height="150" Margin="0,250,0,0"></Image>
+            </Grid>
+            <Border Grid.Row="2" Height="40" Width="150" Background="White" CornerRadius="20" BorderThickness="0">
+                <Button Content="LOGOUT"  Height="40" Width="150" Background="Transparent" FontSize="15" FontWeight="Bold" Foreground="Green" Click="Button_Click" BorderThickness="0"></Button>
+            </Border>
+            
+        </Grid>
+    </Grid>
+</Window>
